@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/constants-complex64-nan",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Canonical single-precision complex floating-point NaN.",
   "license": "Apache-2.0",
   "author": {
