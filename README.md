@@ -35,43 +35,30 @@ limitations under the License.
 
 > Canonical single-precision complex floating-point `NaN`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-complex64-nan
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-COMPLEX64_NAN = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/constants-complex64-nan/tags). For example,
-
-```javascript
-COMPLEX64_NAN = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var COMPLEX64_NAN = require( 'path/to/vendor/umd/constants-complex64-nan/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.COMPLEX64_NAN;
-})();
-</script>
+var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 ```
 
 #### COMPLEX64_NAN
@@ -99,16 +86,11 @@ var im = imagf( COMPLEX64_NAN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 // returns <Complex64Array>
@@ -132,11 +114,6 @@ re = realf( v );
 
 im = imagf( v );
 // returns NaN
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -146,6 +123,14 @@ im = imagf( v );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/constants-complex128/nan`][@stdlib/constants/complex128/nan]</span><span class="delimiter">: </span><span class="description">canonical double-precision complex floating-point NaN.</span>
+
+</section>
 
 <!-- /.related -->
 
@@ -188,8 +173,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/constants-complex64-nan.svg
 [npm-url]: https://npmjs.org/package/@stdlib/constants-complex64-nan
 
-[test-image]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/constants-complex64-nan/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/constants-complex64-nan?branch=main
@@ -217,6 +202,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/constants-complex64-nan/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/constants-complex64-nan/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/constants/complex128/nan]: https://github.com/stdlib-js/constants-complex128-nan
+
+<!-- </related-links> -->
 
 </section>
 
