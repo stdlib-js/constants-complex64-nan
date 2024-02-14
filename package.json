@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/constants-complex64-nan",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Canonical single-precision complex floating-point NaN.",
   "license": "Apache-2.0",
   "author": {
@@ -35,8 +35,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float32": "^0.1.1",
-    "@stdlib/types": "^0.2.0"
+    "@stdlib/complex-float32": "^0.2.0",
+    "@stdlib/types": "^0.3.1"
   },
   "devDependencies": {
     "@stdlib/array-complex64": "^0.1.0",
