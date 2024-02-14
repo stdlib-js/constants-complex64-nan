@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/constants-complex64-nan/tags). For example,
+
+```javascript
 import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@v0.2.0-esm/index.mjs';
 ```
 
@@ -79,7 +84,7 @@ var im = imagf( COMPLEX64_NAN );
 import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@esm/index.mjs';
 import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@v0.2.0-esm/index.mjs';
+import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@esm/index.mjs';
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 // returns <Complex64Array>
