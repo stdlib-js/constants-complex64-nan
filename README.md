@@ -68,8 +68,8 @@ var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 Canonical single-precision complex floating-point `NaN`.
 
 ```javascript
-var realf = require( '@stdlib/complex-realf' );
-var imagf = require( '@stdlib/complex-imagf' );
+var realf = require( '@stdlib/complex-float32-real' );
+var imagf = require( '@stdlib/complex-float32-imag' );
 
 var re = realf( COMPLEX64_NAN );
 // returns NaN
@@ -89,8 +89,8 @@ var im = imagf( COMPLEX64_NAN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var realf = require( '@stdlib/complex-realf' );
-var imagf = require( '@stdlib/complex-imagf' );
+var realf = require( '@stdlib/complex-float32-real' );
+var imagf = require( '@stdlib/complex-float32-imag' );
 var Complex64Array = require( '@stdlib/array-complex64' );
 var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 
@@ -175,8 +175,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/constants-complex64-nan.svg
 [npm-url]: https://npmjs.org/package/@stdlib/constants-complex64-nan
 
-[test-image]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/constants-complex64-nan/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/constants-complex64-nan/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/constants-complex64-nan?branch=main
