@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@stdlib/complex-float32-ctor": "^0.0.2",
-    "@stdlib/types": "^0.4.1"
+    "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
     "@stdlib/array-complex64": "^0.3.0",
