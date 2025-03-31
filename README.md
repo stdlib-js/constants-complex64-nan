@@ -35,38 +35,32 @@ limitations under the License.
 
 > Canonical single-precision complex floating-point `NaN`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-complex64-nan
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-COMPLEX64_NAN = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var COMPLEX64_NAN = require( 'path/to/vendor/umd/constants-complex64-nan/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.COMPLEX64_NAN;
-})();
-</script>
+var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 ```
 
 #### COMPLEX64_NAN
@@ -94,16 +88,11 @@ var im = imagf( COMPLEX64_NAN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var realf = require( '@stdlib/complex-float32-real' );
+var imagf = require( '@stdlib/complex-float32-imag' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 // returns <Complex64Array>
@@ -127,11 +116,6 @@ re = realf( v );
 
 im = imagf( v );
 // returns NaN
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -178,7 +162,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -226,7 +210,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/constants/complex128/nan]: https://github.com/stdlib-js/constants-complex128-nan/tree/umd
+[@stdlib/constants/complex128/nan]: https://github.com/stdlib-js/constants-complex128-nan
 
 <!-- </related-links> -->
 
