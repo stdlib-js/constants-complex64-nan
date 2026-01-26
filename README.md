@@ -35,14 +35,32 @@ limitations under the License.
 
 > Canonical single-precision complex floating-point `NaN`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-complex64-nan
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@deno/mod.js';
+var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 ```
 
 #### COMPLEX64_NAN
@@ -50,8 +68,8 @@ import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-compl
 Canonical single-precision complex floating-point `NaN`.
 
 ```javascript
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@deno/mod.js';
+var realf = require( '@stdlib/complex-float32-real' );
+var imagf = require( '@stdlib/complex-float32-imag' );
 
 var re = realf( COMPLEX64_NAN );
 // returns NaN
@@ -71,10 +89,10 @@ var im = imagf( COMPLEX64_NAN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@deno/mod.js';
+var realf = require( '@stdlib/complex-float32-real' );
+var imagf = require( '@stdlib/complex-float32-imag' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var COMPLEX64_NAN = require( '@stdlib/constants-complex64-nan' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 // returns <Complex64Array>
@@ -127,7 +145,7 @@ im = imagf( v );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -144,7 +162,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -170,8 +188,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -192,7 +210,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/constants/complex128/nan]: https://github.com/stdlib-js/constants-complex128-nan/tree/deno
+[@stdlib/constants/complex128/nan]: https://github.com/stdlib-js/constants-complex128-nan
 
 <!-- </related-links> -->
 
