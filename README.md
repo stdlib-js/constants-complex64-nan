@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@esm/index.mjs';
+import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@v0.2.3-esm/index.mjs';
 ```
 
 #### COMPLEX64_NAN
@@ -79,7 +79,7 @@ var im = imagf( COMPLEX64_NAN );
 import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@esm/index.mjs';
 import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@esm/index.mjs';
+import COMPLEX64_NAN from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-complex64-nan@v0.2.3-esm/index.mjs';
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 // returns <Complex64Array>
