@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-05-07)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`6c6ac62`](https://github.com/stdlib-js/stdlib/commit/6c6ac629e785f620df16599efbacb2ab0ee71b56) - **docs:** improve doctests for complex number typed arrays in `constants` [(#11979)](https://github.com/stdlib-js/stdlib/pull/11979) _(by Karan Anand)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Karan Anand
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-08)
