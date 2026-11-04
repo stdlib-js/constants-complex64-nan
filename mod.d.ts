@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,15 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-var Complex64Array = require( '@stdlib/array-complex64' );
-var COMPLEX64_NAN = require( './../lib' );
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-console.log( x );
-// => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+import { Complex64 } from '@stdlib/types/complex';
 
-x.fill( COMPLEX64_NAN );
-console.log( x );
-// => <Complex64Array>[ NaN, NaN, NaN, NaN ]
+/**
+* Canonical single-precision complex floating-point NaN.
+*
+* @example
+* var nan = COMPLEX64_NAN;
+* // returns <Complex64>
+*/
+declare const COMPLEX64_NAN: Complex64;
+
+
+// EXPORTS //
+
+export = COMPLEX64_NAN;
